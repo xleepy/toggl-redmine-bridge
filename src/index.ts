@@ -1,3 +1,3 @@
 export * from "./create-config.js";
-export * from "./api-toggl/client.gen.js";
-export * from "./api-toggl/types.gen.js";
+export { client as togglClient } from "./api-toggl/client.gen.js";
+export { client as redmineClient } from "./api-redmine/client.gen.js";

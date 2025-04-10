@@ -15,7 +15,11 @@
   "type": "module",
   "main": "dist/index.js",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./api-redmine": "./dist/api-redmine/index.js",
+    "./api-redmine/*": "./dist/api-redmine/*.js",
+    "./api-toggl": "./dist/api-toggl/index.js",
+    "./api-toggl/*": "./dist/api-toggl/*.js"
   },
   "scripts": {
     "build": "tsc",

@@ -1,0 +1,29 @@
+{
+  "name": "toggl-redmine-bridge",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/xleepy/toggl-redmine-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/xleepy/toggl-redmine-bridge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xleepy/toggl-redmine-bridge.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

@@ -18,12 +18,18 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "generate-redmine": "npx @hey-api/openapi-ts -i https://raw.githubusercontent.com/d-yoshi/redmine-openapi/refs/heads/main/openapi.yml -o src/api-redmine -c @hey-api/client-fetch",
+    "generate-toggl": "npx @hey-api/openapi-ts -i ./toggl-api-v9.json -o src/api-toggl -c @hey-api/client-fetch"
   },
   "devDependencies": {
+    "@hey-api/openapi-ts": "^0.66.3",
     "typescript": "^5.8.3"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.10.0"
   }
 }

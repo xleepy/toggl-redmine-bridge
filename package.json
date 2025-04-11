@@ -1,6 +1,6 @@
 {
-  "name": "toggl-redmine-bridge",
-  "version": "1.0.0",
+  "name": "@saboit/toggl-redmine-bridge",
+  "version": "1.0.1",
   "description": "",
   "homepage": "https://github.com/saboit/toggl-redmine-bridge#readme",
   "bugs": {
